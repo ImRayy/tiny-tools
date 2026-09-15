@@ -1,13 +1,17 @@
 {
   "name": "tiny-tools",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "waku dev",
     "build": "waku build",
     "start": "waku start",
-    "typegen": "waku router typegen"
+    "typegen": "waku router typegen",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "hono": "^4.12.14",
@@ -23,6 +27,8 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "babel-plugin-react-compiler": "^1.0.0",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   }
